@@ -1,0 +1,8 @@
+# logs
+*.log
+
+# npm
+node_modules
+
+# vi temp files
+.*.sw*
