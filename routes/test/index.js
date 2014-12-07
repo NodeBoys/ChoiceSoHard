@@ -1,4 +1,8 @@
-module.exports.first = function (req, res, next){
+var models = require('../../models');
 
-	res.send('first');
+module.exports.first = function (req, res, next){
+	models.test.find({}, function (err, docs){
+		console.log(docs);
+		res.send(docs);
+	});
 };
